@@ -175,7 +175,6 @@ button {
 
   /* Gif scales independently */
   .gif {
-    width: 80%;
-    height: auto;
+    size: fixed;
   }
 }
