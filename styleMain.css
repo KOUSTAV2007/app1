@@ -175,6 +175,12 @@ button {
 
   /* Gif scales independently */
   .gif {
-    size: fixed;
-  }
+  width: 260px;        /* fixed size */
+  height: 200px;       /* fixed size */
+  object-fit: cover;
+  margin-top: 34px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
 }
