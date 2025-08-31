@@ -1,0 +1,121 @@
+/*====================== 404 page =======================*/
+
+/* Import Google Font Sour Gummy */
+@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:wght@400;700&display=swap');
+
+.page_404 {
+    margin-top: 56px;
+    padding: 40px 0;
+    background: #fff;
+    font-family: "Sour Gummy", cursive; /* Default font for whole page */
+    text-align: center;
+}
+
+.page_404 img {
+    width: 100%;
+}
+
+/* 404 text independent from gif */
+.error-code {
+    font-family: "Sour Gummy", cursive;
+    font-size: 140px; /* Bigger */
+    margin-bottom: 20px; /* Space between text and gif */
+    color: #333;
+    font-weight: bold;
+}
+
+/* The gif container */
+.four_zero_four_bg {
+    background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+    height: 400px;
+    margin-top: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* "Look like you're lost" heading */
+.contant_box_404 h3 {
+    font-size: 36px;  /* Adjust as you like */
+    font-family: "Sour Gummy", cursive;
+    color: #333;
+    font-weight: bold;
+}
+
+/* "the page you are looking for not avaible!" text */
+.contant_box_404 p {
+    font-size: 20px;
+    font-family: "Sour Gummy", cursive;
+    color: #333;
+}
+
+.link_404 {
+    display: inline-block;
+    padding: 12px 28px;
+    margin: 20px 0;
+    background: linear-gradient(135deg, #ff7a18, #ffb347); /* fixed gradient */
+    color: #fff !important;
+    font-family: "Sour Gummy", cursive;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none !important; /* no underline */
+    border-radius: 50px; /* pill shape */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+
+.link_404:hover {
+    transform: translateY(-3px) scale(1.05); /* subtle lift only */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    text-decoration: none !important; /* keep underline away */
+}
+
+.contant_box_404 {
+    margin-top: -30px;
+}
+
+
+
+
+
+
+/*====================== Responsive =======================*/
+
+/* Large tablets and small laptops */
+@media (max-width: 768px) {
+    .error-code {
+        font-size: 110px;
+    }
+    .contant_box_404 h3 {
+        font-size: 30px;
+    }
+    .contant_box_404 p {
+        font-size: 18px;
+    }
+    .four_zero_four_bg {
+        height: 320px;
+        background-size: contain;
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+    .error-code {
+        font-size: 80px;
+    }
+    .contant_box_404 h3 {
+        font-size: 24px;
+    }
+    .contant_box_404 p {
+        font-size: 16px;
+    }
+    .four_zero_four_bg {
+        height: 240px;
+        background-size: contain;
+    }
+    .link_404 {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}
