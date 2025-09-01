@@ -1,16 +1,26 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Do You Love Me?</title>
-
-  <!-- CSS -->
   <link rel="stylesheet" href="styleMain.css">
   <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:wght@400;700&display=swap" rel="stylesheet">
 
-  <!-- Maintenance Mode Script -->
-  <script src="myscript.js?v=2"></script>
+
+  <script>
+  // Toggle Maintenance Mode
+  const MAINTENANCE_MODE = false; // true = ON (default), false = OFF
+
+  if (MAINTENANCE_MODE) {
+    window.location.href = "maintenance.html"; // relative path works inside repo
+  }
+</script>
+<script src="myscript.js?v=2"></script>
+
+
+
+  
 </head>
 <body>
   <!-- Splash Screen -->
@@ -30,7 +40,6 @@
     </div>
   </div>
 
-  <!-- Main Site JS -->
   <script src="script.js"></script>
 </body>
 </html>
