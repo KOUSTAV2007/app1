@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Site Under Maintenance</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Sour Gummy", cursive;
+      background: #fff;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;       /* Fill screen */
+      overflow: hidden;    /* No scroll */
+    }
+
+    .maintenance {
+      width: 100%;
+      padding: 20px;
+    }
+
+    .maintenance h1 {
+      font-size: 80px;   /* Bigger heading */
+      margin: 0 0 40px;
+      color: #333;
+      margin-top: 50px;
+    }
+
+    .maintenance h3 {
+      font-size: 40px;
+      margin: 30px 0 20px;
+      color: #333;
+    }
+
+    .maintenance p {
+      font-size: 28px;
+      font-weight: bold;
+      color: #333;
+      margin-top: 15px;
+    }
+
+    .maintenance .gif-box {
+      width: 100%;
+      height: 320px;   /* Bigger GIF */
+      margin: 0 auto 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .maintenance .gif-box img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 768px) {
+      .maintenance h1 {
+        font-size: 60px;
+        margin-bottom: 25px;
+      }
+      .maintenance h3 {
+        font-size: 28px;
+      }
+      .maintenance p {
+        font-size: 20px;
+      }
+      .maintenance .gif-box {
+        height: 240px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .maintenance h1 {
+        font-size: 42px;
+        margin-bottom: 20px;
+      }
+      .maintenance h3 {
+        font-size: 22px;
+      }
+      .maintenance p {
+        font-size: 16px;
+      }
+      .maintenance .gif-box {
+        height: 180px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="maintenance">
+    <h1>Under Maintenance !</h1>
+    <div class="gif-box">
+      <!-- Replace with your new maintenance gif -->
+      <img src="https://github.com/KOUSTAV2007/gif-host/raw/main/maintenance.gif" alt="Maintenance GIF">
+    </div>
+    <h3>We'll be back soon!</h3>
+    <p>We are getting ready to serve you better.</p>
+  </div>
+</body>
+</html>
