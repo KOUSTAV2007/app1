@@ -10,12 +10,13 @@
 
   <script>
   // Toggle Maintenance Mode
-  const MAINTENANCE_MODE = false; // true = ON, false = OFF
+  const MAINTENANCE_MODE = true; // true = ON (default), false = OFF
 
   if (MAINTENANCE_MODE) {
-    window.location.href = "/maintenance.html";
+    window.location.href = "maintenance.html"; // relative path works inside repo
   }
 </script>
+
 
 
   
